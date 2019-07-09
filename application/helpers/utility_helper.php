@@ -109,7 +109,7 @@ function get_profile($peerID)
 				'timeout' => 10
 			)
 		));
-		$profile_load = @loadFile("http://127.0.0.1:4002/ob/profile/" . $peerID."?usecache=true");
+		$profile_load = @loadFile("http://134.209.23.223:4002/ob/profile/" . $peerID."?usecache=true");
 
 		// 	    }
 
@@ -226,7 +226,7 @@ function get_listing($peerID, $slug)
 	));
 	$listing_load = $CI->cache->get('listing_' . $slug);
 	if ($listing_load == "") {
-		$listing_load = @loadFile("http://127.0.0.1:4002/ob/listing/" . $peerID . "/" . $slug);
+		$listing_load = @loadFile("http://134.209.23.223:4002/ob/listing/" . $peerID . "/" . $slug);
 		$CI->cache->file->save('listing_' . $slug, $listing_load, 5400); // 60 minutes cache
 	}
 
