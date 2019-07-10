@@ -408,7 +408,7 @@
 							<div class="Mobile-More-Listing">
 							<a href="/store/<?=$profile->peerID?>/<?=$listing->slug?>">
 							<div class="Store-Body-Listing-Box" style="padding-top:0">
-								<div class="Store-Body-Listing-Box-Photo" style="background-image:url('http://127.0.0.1:4002/ob/images/<?=$listing->thumbnail->small. "?usecache=true"?>');"></div>
+								<div class="Store-Body-Listing-Box-Photo" style="background-image:url('http://134.209.23.223:4002/ob/images/<?=$listing->thumbnail->small. "?usecache=true"?>');"></div>
 								<div class="Discover-Body-Listing-Box-Desc">
 									<div class="Discover-Body-Listing-Box-Title"><a href="/store/<?=$profile->peerID?>/<?=$listing->slug?>"><?=$listing->title?></a></div>
 								</div>
